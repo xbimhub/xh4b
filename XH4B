@@ -24,14 +24,14 @@ LMG2L["UIStroke_4"] = Instance.new("UIStroke", LMG2L["Frame_3"])
 LMG2L["ImageLabel_5"] = Instance.new("ImageLabel", LMG2L["Frame_2"])
 LMG2L["ImageLabel_5"]["BorderSizePixel"] = 0
 LMG2L["ImageLabel_5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 24)
-LMG2L["ImageLabel_5"]["Image"] = "rbxassetid://109251560"
+LMG2L["ImageLabel_5"]["Image"] = "rbxassetid://4705269490"
 LMG2L["ImageLabel_5"]["Size"] = UDim2.new(0, 36, 0, 36)
 LMG2L["ImageLabel_5"]["BackgroundTransparency"] = 1
 
 LMG2L["DecalImage"] = Instance.new("ImageLabel", LMG2L["ScreenGui_1"])
 LMG2L["DecalImage"]["BorderSizePixel"] = 0
 LMG2L["DecalImage"]["BackgroundTransparency"] = 1
-LMG2L["DecalImage"]["Image"] = "rbxassetid://"
+LMG2L["DecalImage"]["Image"] = "rbxassetid://4705269490"
 LMG2L["DecalImage"]["Visible"] = false
 LMG2L["DecalImage"]["ZIndex"] = 10
 
@@ -228,7 +228,7 @@ for _, plr in ipairs(game:GetService("Players"):GetPlayers()) do
 end
 ]],
     ["XH4Bify.txt"] = [[
-local ID = 109251560
+local ID = 4705269490
  local Skybox = true
  local particle = true
  
