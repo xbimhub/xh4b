@@ -1,0 +1,491 @@
+--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+local LMG2L = {}
+
+LMG2L["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))
+LMG2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
+LMG2L["ScreenGui_1"]["ResetOnSpawn"] = false
+
+LMG2L["Frame_2"] = Instance.new("Frame", LMG2L["ScreenGui_1"])
+LMG2L["Frame_2"]["BorderSizePixel"] = 0
+LMG2L["Frame_2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 2)
+LMG2L["Frame_2"]["Size"] = UDim2.new(0, 722, 0, 430)
+LMG2L["Frame_2"]["Position"] = UDim2.new(0.5, -361, 0.5, -215)
+
+LMG2L["Frame_3"] = Instance.new("Frame", LMG2L["Frame_2"])
+LMG2L["Frame_3"]["BorderSizePixel"] = 0
+LMG2L["Frame_3"]["BackgroundColor3"] = Color3.fromRGB(217, 24, 2)
+LMG2L["Frame_3"]["Size"] = UDim2.new(0, 722, 0, 30)
+LMG2L["Frame_3"]["Position"] = UDim2.new(0, 0, 0, 34)
+
+LMG2L["UIStroke_4"] = Instance.new("UIStroke", LMG2L["Frame_3"])
+
+LMG2L["ImageLabel_5"] = Instance.new("ImageLabel", LMG2L["Frame_2"])
+LMG2L["ImageLabel_5"]["BorderSizePixel"] = 0
+LMG2L["ImageLabel_5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 24)
+LMG2L["ImageLabel_5"]["Image"] = "rbxassetid://109251560"
+LMG2L["ImageLabel_5"]["Size"] = UDim2.new(0, 36, 0, 36)
+LMG2L["ImageLabel_5"]["BackgroundTransparency"] = 1
+
+LMG2L["DecalImage"] = Instance.new("ImageLabel", LMG2L["ScreenGui_1"])
+LMG2L["DecalImage"]["BorderSizePixel"] = 0
+LMG2L["DecalImage"]["BackgroundTransparency"] = 1
+LMG2L["DecalImage"]["Image"] = "rbxassetid://"
+LMG2L["DecalImage"]["Visible"] = false
+LMG2L["DecalImage"]["ZIndex"] = 10
+
+LMG2L["TextLabel_6"] = Instance.new("TextLabel", LMG2L["Frame_2"])
+LMG2L["TextLabel_6"]["BorderSizePixel"] = 0
+LMG2L["TextLabel_6"]["TextSize"] = 10
+LMG2L["TextLabel_6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+LMG2L["TextLabel_6"]["BackgroundTransparency"] = 1
+LMG2L["TextLabel_6"]["Size"] = UDim2.new(0.2, 0, 0.3, 0)
+LMG2L["TextLabel_6"]["Text"] = "XH4b .cmd"
+LMG2L["TextLabel_6"]["Position"] = UDim2.new(0, 24, 0, -46)
+
+LMG2L["TextLabel_7"] = Instance.new("TextLabel", LMG2L["Frame_2"])
+LMG2L["TextLabel_7"]["BorderSizePixel"] = 0
+LMG2L["TextLabel_7"]["TextSize"] = 15
+LMG2L["TextLabel_7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+LMG2L["TextLabel_7"]["BackgroundTransparency"] = 1
+LMG2L["TextLabel_7"]["Size"] = UDim2.new(0.2, 0, 0.3, 0)
+LMG2L["TextLabel_7"]["Text"] = "H4b"
+LMG2L["TextLabel_7"]["Position"] = UDim2.new(0, 626, 0, -46)
+
+LMG2L["TextLabel_8"] = Instance.new("TextLabel", LMG2L["Frame_2"])
+LMG2L["TextLabel_8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+LMG2L["TextLabel_8"]["Size"] = UDim2.new(0, 26, 0, 24)
+LMG2L["TextLabel_8"]["Text"] = "B1m"
+LMG2L["TextLabel_8"]["Position"] = UDim2.new(0, 650, 0, 6)
+
+LMG2L["TextLabel_9"] = Instance.new("TextLabel", LMG2L["Frame_2"])
+LMG2L["TextLabel_9"]["BorderSizePixel"] = 0
+LMG2L["TextLabel_9"]["TextSize"] = 20
+LMG2L["TextLabel_9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+LMG2L["TextLabel_9"]["BackgroundTransparency"] = 1
+LMG2L["TextLabel_9"]["Size"] = UDim2.new(0.2, 0, 0.3, 0)
+LMG2L["TextLabel_9"]["Text"] = "X"
+LMG2L["TextLabel_9"]["Position"] = UDim2.new(0, 550, 0, -62)
+
+LMG2L["TextBox_a"] = Instance.new("TextBox", LMG2L["Frame_2"])
+LMG2L["TextBox_a"]["BorderSizePixel"] = 2
+LMG2L["TextBox_a"]["TextSize"] = 15
+LMG2L["TextBox_a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+LMG2L["TextBox_a"]["Size"] = UDim2.new(0, 402, 0, 222)
+LMG2L["TextBox_a"]["Position"] = UDim2.new(0, 34, 0, 66)
+LMG2L["TextBox_a"]["BorderColor3"] = Color3.fromRGB(100, 100, 100)
+LMG2L["TextBox_a"]["Text"] = ""
+LMG2L["TextBox_a"]["MultiLine"] = true
+LMG2L["TextBox_a"]["ClearTextOnFocus"] = false
+LMG2L["TextBox_a"]["TextWrapped"] = true
+LMG2L["TextBox_a"]["TextXAlignment"] = Enum.TextXAlignment.Left
+LMG2L["TextBox_a"]["TextYAlignment"] = Enum.TextYAlignment.Top
+
+LMG2L["Frame_b"] = Instance.new("Frame", LMG2L["Frame_2"])
+LMG2L["Frame_b"]["BorderSizePixel"] = 2
+LMG2L["Frame_b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+LMG2L["Frame_b"]["Size"] = UDim2.new(0, 218, 0, 356)
+LMG2L["Frame_b"]["Position"] = UDim2.new(0, 464, 0, 66)
+LMG2L["Frame_b"]["BorderColor3"] = Color3.fromRGB(100, 100, 100)
+LMG2L["Frame_b"]["Name"] = "ScriptsFrame"
+
+LMG2L["ScrollingFrame"] = Instance.new("ScrollingFrame", LMG2L["Frame_b"])
+LMG2L["ScrollingFrame"]["BackgroundTransparency"] = 1
+LMG2L["ScrollingFrame"]["Size"] = UDim2.new(1, -10, 1, -10)
+LMG2L["ScrollingFrame"]["Position"] = UDim2.new(0, 5, 0, 5)
+LMG2L["ScrollingFrame"]["CanvasSize"] = UDim2.new(0, 0, 0, 0)
+LMG2L["ScrollingFrame"]["ScrollBarThickness"] = 6
+
+LMG2L["UIListLayout"] = Instance.new("UIListLayout", LMG2L["ScrollingFrame"])
+LMG2L["UIListLayout"]["Padding"] = UDim.new(0, 6)
+LMG2L["UIListLayout"]["SortOrder"] = Enum.SortOrder.LayoutOrder
+
+local localPlayer = game:GetService("Players").LocalPlayer
+
+local scripts = {
+    ["HAPPY HUB SS.txt"] = [[require(104239303577263):Hload("]] .. localPlayer.Name .. [[")]],
+	["Clown Kindnap.txt"] = [[require(5591099977)("]] .. localPlayer.Name .. [[")]],
+    ["Niggais comming.txt"] = [[require(104239303577263)("NIGGA IS COMING"),("User")]],
+    ["Road Rogue.txt"] = [[require(7473216460).load("]] .. localPlayer.Name .. [[")]],
+    ["Chess king.txt"] = [[require(6223977609).ChessKing("]] .. localPlayer.Name .. [[")]],
+    ["team_XH4B theme.txt"] = [[
+-- Server-side music script
+local SoundService = game:GetService("SoundService")
+
+local music = Instance.new("Sound")
+music.SoundId = "rbxassetid://1839246774"  -- Replace with your Roblox audio asset ID
+music.Looped = true
+music.Volume = 0.5
+music.Parent = SoundService
+
+music:Play()
+]],
+    ["Anonymousify.txt"] = [[
+local ID = 73884714863714
+ local Skybox = true
+ local particle = true
+ 
+-- DO NOT CHANGE BELOW. UNLESS YOU KNOW WHAT YOU'RE DOING.
+ 
+for i,v in pairs (game.Workspace:GetChildren()) do
+        if v:IsA("Part") then
+            local decal1 =Instance.new("Decal")
+            local decal2 =Instance.new("Decal")
+            local decal3 =Instance.new("Decal")
+            local decal4 =Instance.new("Decal")
+            local decal5 =Instance.new("Decal")
+            local decal6 =Instance.new("Decal")
+            decal1.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal2.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal3.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal4.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal5.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal6.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal1.Parent = v
+            decal2.Parent = v
+            decal3.Parent = v
+            decal4.Parent = v
+            decal5.Parent = v
+            decal6.Parent = v
+            decal1.Face = "Front"
+            decal2.Face = "Top"
+            decal3.Face = "Left"
+            decal4.Face = "Right"
+            decal5.Face = "Bottom"
+            decal6.Face = "Back"
+        end
+        end
+            for i,v in pairs (game.Workspace:GetChildren()) do
+            if v:IsA("Model") then
+            for i,z in pairs (v:GetChildren()) do
+            if z:IsA("Part") then
+                        local decal7 =Instance.new("Decal")
+            local decal8 =Instance.new("Decal")
+            local decal9 =Instance.new("Decal")
+            local decal10 =Instance.new("Decal")
+            local decal11 =Instance.new("Decal")
+            local decal12 =Instance.new("Decal")
+            decal7.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal8.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal9.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal10.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal11.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal12.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal7.Parent = z
+            decal8.Parent = z
+            decal9.Parent = z
+            decal10.Parent = z
+            decal11.Parent = z
+            decal12.Parent = z
+            decal7.Face = "Front"
+            decal8.Face = "Top"
+            decal9.Face = "Left"
+            decal10.Face = "Right"
+            decal11.Face = "Bottom"
+            decal12.Face = "Back"
+            end
+            end
+            end
+            end 
+ 
+ 
+if Skybox == true then
+local sky = Instance.new("Sky")
+sky.Parent = game.Lighting
+sky.SkyboxBk = "http://www.roblox.com/asset/?id=" ..ID
+sky.SkyboxDn = "http://www.roblox.com/asset/?id=" ..ID
+sky.SkyboxFt = "http://www.roblox.com/asset/?id=" ..ID
+sky.SkyboxLf = "http://www.roblox.com/asset/?id=" ..ID
+sky.SkyboxRt = "http://www.roblox.com/asset/?id=" ..ID
+sky.SkyboxUp = "http://www.roblox.com/asset/?id=" ..ID
+end
+ 
+]],
+    ["tilt map.txt"] = [[
+local baseplate = workspace.Terrain or workspace:FindFirstChildWhichIsA("BasePart")
+if baseplate then
+    baseplate.CFrame = baseplate.CFrame * CFrame.Angles(0, 0, math.rad(45))
+end
+for _, part in ipairs(workspace:GetDescendants()) do
+    if part:IsA("BasePart") then
+        part.CFrame = part.CFrame * CFrame.Angles(0, 0, math.rad(30))
+    end
+end
+]],
+    ["unanchor map.txt"] = [[
+for _, part in ipairs(workspace:GetDescendants()) do
+    if part:IsA("BasePart") then
+        part.Anchored = false
+    end
+end
+]],
+    ["kick all.txt"] = [[
+for _, plr in ipairs(game:GetService("Players"):GetPlayers()) do
+    if plr ~= game:GetService("Players").LocalPlayer then
+        plr:Kick("You have been kicked XH4B_Team")
+    end
+end
+]],
+    ["XH4Bify.txt"] = [[
+local ID = 109251560
+ local Skybox = true
+ local particle = true
+ 
+-- DO NOT CHANGE BELOW. UNLESS YOU KNOW WHAT YOU'RE DOING.
+ 
+for i,v in pairs (game.Workspace:GetChildren()) do
+        if v:IsA("Part") then
+            local decal1 =Instance.new("Decal")
+            local decal2 =Instance.new("Decal")
+            local decal3 =Instance.new("Decal")
+            local decal4 =Instance.new("Decal")
+            local decal5 =Instance.new("Decal")
+            local decal6 =Instance.new("Decal")
+            decal1.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal2.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal3.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal4.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal5.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal6.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal1.Parent = v
+            decal2.Parent = v
+            decal3.Parent = v
+            decal4.Parent = v
+            decal5.Parent = v
+            decal6.Parent = v
+            decal1.Face = "Front"
+            decal2.Face = "Top"
+            decal3.Face = "Left"
+            decal4.Face = "Right"
+            decal5.Face = "Bottom"
+            decal6.Face = "Back"
+        end
+        end
+            for i,v in pairs (game.Workspace:GetChildren()) do
+            if v:IsA("Model") then
+            for i,z in pairs (v:GetChildren()) do
+            if z:IsA("Part") then
+                        local decal7 =Instance.new("Decal")
+            local decal8 =Instance.new("Decal")
+            local decal9 =Instance.new("Decal")
+            local decal10 =Instance.new("Decal")
+            local decal11 =Instance.new("Decal")
+            local decal12 =Instance.new("Decal")
+            decal7.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal8.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal9.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal10.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal11.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal12.Texture = "http://www.roblox.com/asset/?id=" ..ID
+            decal7.Parent = z
+            decal8.Parent = z
+            decal9.Parent = z
+            decal10.Parent = z
+            decal11.Parent = z
+            decal12.Parent = z
+            decal7.Face = "Front"
+            decal8.Face = "Top"
+            decal9.Face = "Left"
+            decal10.Face = "Right"
+            decal11.Face = "Bottom"
+            decal12.Face = "Back"
+            end
+            end
+            end
+            end 
+ 
+ 
+if Skybox == true then
+local sky = Instance.new("Sky")
+sky.Parent = game.Lighting
+sky.SkyboxBk = "http://www.roblox.com/asset/?id=" ..ID
+sky.SkyboxDn = "http://www.roblox.com/asset/?id=" ..ID
+sky.SkyboxFt = "http://www.roblox.com/asset/?id=" ..ID
+sky.SkyboxLf = "http://www.roblox.com/asset/?id=" ..ID
+sky.SkyboxRt = "http://www.roblox.com/asset/?id=" ..ID
+sky.SkyboxUp = "http://www.roblox.com/asset/?id=" ..ID
+end
+
+]]
+}
+
+local buttonCount = 0
+for scriptName, scriptCode in pairs(scripts) do
+    local btn = Instance.new("TextButton")
+    btn.Name = "ScriptButton_" .. scriptName
+    btn.Parent = LMG2L["ScrollingFrame"]
+    btn.BackgroundColor3 = Color3.fromRGB(217, 217, 217)
+    btn.BorderSizePixel = 1
+    btn.BorderColor3 = Color3.fromRGB(100, 100, 100)
+    btn.Size = UDim2.new(1, -10, 0, 36)
+    btn.Text = scriptName
+    btn.TextSize = 14
+    btn.TextColor3 = Color3.new(0, 0, 0)
+    btn.MouseButton1Click:Connect(function()
+        LMG2L["TextBox_a"].Text = scriptCode
+    end)
+    buttonCount = buttonCount + 1
+end
+
+LMG2L["ScrollingFrame"].CanvasSize = UDim2.new(0, 0, 0, buttonCount * 42 + 10)
+
+LMG2L["TextButton_c"] = Instance.new("TextButton", LMG2L["Frame_2"])
+LMG2L["TextButton_c"]["TextStrokeTransparency"] = 0.8
+LMG2L["TextButton_c"]["BorderSizePixel"] = 2
+LMG2L["TextButton_c"]["TextSize"] = 15
+LMG2L["TextButton_c"]["BackgroundColor3"] = Color3.fromRGB(217, 217, 217)
+LMG2L["TextButton_c"]["Size"] = UDim2.new(0, 118, 0, 40)
+LMG2L["TextButton_c"]["BorderColor3"] = Color3.fromRGB(100, 100, 100)
+LMG2L["TextButton_c"]["Text"] = "Inject"
+LMG2L["TextButton_c"]["Position"] = UDim2.new(0, 34, 0, 384)
+
+LMG2L["TextButton_d"] = Instance.new("TextButton", LMG2L["Frame_2"])
+LMG2L["TextButton_d"]["TextStrokeTransparency"] = 0.8
+LMG2L["TextButton_d"]["BorderSizePixel"] = 2
+LMG2L["TextButton_d"]["TextSize"] = 15
+LMG2L["TextButton_d"]["BackgroundColor3"] = Color3.fromRGB(217, 217, 217)
+LMG2L["TextButton_d"]["Size"] = UDim2.new(0, 118, 0, 38)
+LMG2L["TextButton_d"]["BorderColor3"] = Color3.fromRGB(100, 100, 100)
+LMG2L["TextButton_d"]["Text"] = "Clear"
+LMG2L["TextButton_d"]["Position"] = UDim2.new(0, 34, 0, 340)
+
+LMG2L["TextButton_e"] = Instance.new("TextButton", LMG2L["Frame_2"])
+LMG2L["TextButton_e"]["TextStrokeTransparency"] = 0.8
+LMG2L["TextButton_e"]["BorderSizePixel"] = 2
+LMG2L["TextButton_e"]["TextSize"] = 15
+LMG2L["TextButton_e"]["BackgroundColor3"] = Color3.fromRGB(217, 217, 217)
+LMG2L["TextButton_e"]["Size"] = UDim2.new(0, 118, 0, 38)
+LMG2L["TextButton_e"]["BorderColor3"] = Color3.fromRGB(100, 100, 100)
+LMG2L["TextButton_e"]["Text"] = "Execute"
+LMG2L["TextButton_e"]["Position"] = UDim2.new(0, 34, 0, 296)
+
+LMG2L["Frame_f"] = Instance.new("Frame", LMG2L["Frame_2"])
+LMG2L["Frame_f"]["BorderSizePixel"] = 2
+LMG2L["Frame_f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+LMG2L["Frame_f"]["Size"] = UDim2.new(0, 276, 0, 126)
+LMG2L["Frame_f"]["Position"] = UDim2.new(0, 160, 0, 296)
+LMG2L["Frame_f"]["BorderColor3"] = Color3.fromRGB(100, 100, 100)
+
+LMG2L["TextLabel_10"] = Instance.new("TextLabel", LMG2L["Frame_2"])
+LMG2L["TextLabel_10"]["BorderSizePixel"] = 0
+LMG2L["TextLabel_10"]["TextSize"] = 10
+LMG2L["TextLabel_10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+LMG2L["TextLabel_10"]["BackgroundTransparency"] = 1
+LMG2L["TextLabel_10"]["Size"] = UDim2.new(0, 144, 0, 28)
+LMG2L["TextLabel_10"]["Text"] = "XB4b injected"
+LMG2L["TextLabel_10"]["Position"] = UDim2.new(0, 184, 0, 292)
+
+LMG2L["TextButton_11"] = Instance.new("TextButton", LMG2L["Frame_2"])
+LMG2L["TextButton_11"]["BorderSizePixel"] = 2
+LMG2L["TextButton_11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+LMG2L["TextButton_11"]["Size"] = UDim2.new(0, 54, 0, 24)
+LMG2L["TextButton_11"]["Text"] = "Executor"
+LMG2L["TextButton_11"]["Position"] = UDim2.new(0, 34, 0, 40)
+
+LMG2L["TextButton_12"] = Instance.new("TextButton", LMG2L["Frame_2"])
+LMG2L["TextButton_12"]["BorderSizePixel"] = 2
+LMG2L["TextButton_12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+LMG2L["TextButton_12"]["Size"] = UDim2.new(0, 66, 0, 24)
+LMG2L["TextButton_12"]["Text"] = "by XH4B_Team"
+LMG2L["TextButton_12"]["Position"] = UDim2.new(0, 92, 0, 40)
+
+LMG2L["UICorner_13"] = Instance.new("UICorner", LMG2L["Frame_2"])
+
+LMG2L["UIStroke_14"] = Instance.new("UIStroke", LMG2L["Frame_2"])
+
+local UserInputService = game:GetService("UserInputService")
+local mainFrame = LMG2L["Frame_2"]
+
+local dragging = false
+local dragInput, dragStart, startPos
+
+local function updateInput(input)
+    local delta = input.Position - dragStart
+    mainFrame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+end
+
+mainFrame.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        dragging = true
+        dragStart = input.Position
+        startPos = mainFrame.Position
+
+        local connection
+        connection = input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                dragging = false
+                connection:Disconnect()
+            end
+        end)
+    end
+end)
+
+mainFrame.InputChanged:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+        dragInput = input
+    end
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+    if dragging and (input == dragInput) then
+        updateInput(input)
+    end
+end)
+
+local TweenService = game:GetService("TweenService")
+local decal = LMG2L["DecalImage"]
+local screenGui = LMG2L["ScreenGui_1"]
+
+local baseDecalSize = 180
+local minSize = 100
+
+local function updateDecalSize()
+    local screenWidth = screenGui.AbsoluteSize.X
+    local scaleFactor = math.clamp(screenWidth / 1920, 0.4, 1)
+    local decalSize = math.max(baseDecalSize * scaleFactor, minSize)
+    
+    decal.Size = UDim2.new(0, decalSize, 0, decalSize)
+end
+
+updateDecalSize()
+
+screenGui:GetPropertyChangedSignal("AbsoluteSize"):Connect(updateDecalSize)
+
+local tweenInfo = TweenInfo.new(0.8, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+
+LMG2L["TextButton_c"].MouseButton1Click:Connect(function()
+    updateDecalSize()
+    
+    local size = decal.AbsoluteSize.X
+    
+    decal.Position = UDim2.new(0, -size, 0.5, -size / 2)
+    decal.Visible = true
+    decal.ImageTransparency = 0
+
+    local tween1 = TweenService:Create(decal, tweenInfo, {Position = UDim2.new(0.5, -size / 2, 0.5, -size / 2)})
+    tween1:Play()
+
+    tween1.Completed:Connect(function()
+        local finalPos = UDim2.new(0, 20, 1, -20 - size)
+local tween2 = TweenService:Create(decal, tweenInfo, {Position = finalPos})
+        tween2:Play()
+    end)
+end)
+
+LMG2L["TextButton_d"].MouseButton1Click:Connect(function()
+    LMG2L["TextBox_a"].Text = ""
+end)
+
+LMG2L["TextButton_e"].MouseButton1Click:Connect(function()
+    local text = LMG2L["TextBox_a"].Text
+    if text == "" then return end
+    
+    for _, obj in ipairs(game:GetService("ReplicatedStorage"):GetChildren()) do
+        if obj:IsA("RemoteEvent") then
+            obj:FireServer(text)
+        end
+    end
+end)
+
+return LMG2L["ScreenGui_1"]        
