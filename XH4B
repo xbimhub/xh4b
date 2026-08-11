@@ -41,7 +41,7 @@ LMG2L["TextLabel_6"]["TextSize"] = 10
 LMG2L["TextLabel_6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 LMG2L["TextLabel_6"]["BackgroundTransparency"] = 1
 LMG2L["TextLabel_6"]["Size"] = UDim2.new(0.2, 0, 0.3, 0)
-LMG2L["TextLabel_6"]["Text"] = "XH4b .cmd"
+LMG2L["TextLabel_6"]["Text"] = "By XH4b_Team"
 LMG2L["TextLabel_6"]["Position"] = UDim2.new(0, 24, 0, -46)
 
 LMG2L["TextLabel_7"] = Instance.new("TextLabel", LMG2L["Frame_2"])
@@ -380,14 +380,14 @@ LMG2L["TextButton_11"] = Instance.new("TextButton", LMG2L["Frame_2"])
 LMG2L["TextButton_11"]["BorderSizePixel"] = 2
 LMG2L["TextButton_11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 LMG2L["TextButton_11"]["Size"] = UDim2.new(0, 54, 0, 24)
-LMG2L["TextButton_11"]["Text"] = "Executor"
+LMG2L["TextButton_11"]["Text"] = "Backdoor"
 LMG2L["TextButton_11"]["Position"] = UDim2.new(0, 34, 0, 40)
 
 LMG2L["TextButton_12"] = Instance.new("TextButton", LMG2L["Frame_2"])
 LMG2L["TextButton_12"]["BorderSizePixel"] = 2
 LMG2L["TextButton_12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 LMG2L["TextButton_12"]["Size"] = UDim2.new(0, 66, 0, 24)
-LMG2L["TextButton_12"]["Text"] = "by XH4B_Team"
+LMG2L["TextButton_12"]["Text"] = "Executor"
 LMG2L["TextButton_12"]["Position"] = UDim2.new(0, 92, 0, 40)
 
 LMG2L["UICorner_13"] = Instance.new("UICorner", LMG2L["Frame_2"])
